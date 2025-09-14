@@ -8,6 +8,7 @@ train your sat vocab with this tool
      -go to programiz.pro/ide/python
      -make an account and create a new playground
      -from the explorer upload all the required files (main.py, total_words.csv, words_learned.csv)
+        -note that you cannot upload folders directly, thus, upload each file one by one
      -run the main.py file
 # Usage
 1. Follow the console window output to train vocab
