@@ -39,7 +39,7 @@ if learning.lower() == "y":
  #generate random 5 words that are not learned
  words_to_learn = []
  while len(words_to_learn) < 5:
-   rand = random.randint(0, len(words_not_learned))
+   rand = random.randint(0, len(words_not_learned)-1)
    if words_not_learned[rand] not in words_to_learn:
      words_to_learn.append(words_not_learned[rand])
   for i in range(5):
@@ -60,7 +60,7 @@ if testWordsLearned.lower() == "y":
  words_to_test = []
  length = int(len(words_learned) / 2)
  while len(words_to_test) < length:
-   rand = random.randint(0, len(words_learned))
+   rand = random.randint(0, len(words_learned)-1)
    if words_learned[rand] not in words_to_test:
      words_to_test.append(words_learned[rand])
 
